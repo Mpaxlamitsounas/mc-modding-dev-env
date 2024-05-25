@@ -1,6 +1,5 @@
 package men.mpaxlamitsounas.mplearn.blocks;
 
-import men.mpaxlamitsounas.mplearn.Tags;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -10,13 +9,14 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import men.mpaxlamitsounas.mplearn.Tags;
+
 public class CastleRoofTile extends Block {
 
     public CastleRoofTile() {
         super(Material.ROCK);
-        setTranslationKey(Tags.MODID + ".castle_roof_tile");
-        setRegistryName("castle_roof_tile");
-        this.setCreativeTab(CreativeTabs.DECORATIONS);
+        this.setTranslationKey(Tags.MODID + ".castle_roof_tile").setRegistryName("castle_roof_tile").setHardness(1.5F)
+                .setResistance(10.0F).setCreativeTab(CreativeTabs.DECORATIONS);
     }
 
     @SideOnly(Side.CLIENT)
