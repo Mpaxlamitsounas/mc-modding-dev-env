@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import men.mpaxlamitsounas.mplearn.ModBlocks;
 import men.mpaxlamitsounas.mplearn.blocks.CastleRoofTile;
+import men.mpaxlamitsounas.mplearn.items.MSword;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
@@ -22,8 +23,9 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(
-                new ItemBlock(ModBlocks.castleRoofTile).setRegistryName(ModBlocks.castleRoofTile.getRegistryName()));
+        event.getRegistry().registerAll(
+                new ItemBlock(ModBlocks.castleRoofTile).setRegistryName(ModBlocks.castleRoofTile.getRegistryName()),
+                new MSword());
     }
 
     public void preInit(FMLPreInitializationEvent e) {}
