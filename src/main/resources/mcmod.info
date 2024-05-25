@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "mplearn",
+    "name": "Mpaxlamitsounas' learning env",
+    "description": "Mod that includes anything I've made in my attempts to make actual mods",
+    "version": "${version}",
+    "mcversion": "1.12.2-14.23.5.2859",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "mpaxlamitsounas"
+    ],
+    "credits": "Thanks to the entire 1.12 community that has helped my stupid ass learn modding",
+    "logoFile": "logo.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
