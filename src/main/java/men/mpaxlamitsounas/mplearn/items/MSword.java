@@ -15,7 +15,7 @@ import men.mpaxlamitsounas.mplearn.util.EntityLightningBoltCustom;
 
 @Mod.EventBusSubscriber(Side.SERVER)
 public class MSword extends ItemSword {
-
+// TODO: make sword light on fire (any way you want)
     public MSword() {
         super(ModMaterials.OBSIDIAN);
         this.setTranslationKey(Tags.MODID + ".msword").setRegistryName("msword");
