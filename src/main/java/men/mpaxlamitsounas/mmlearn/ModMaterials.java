@@ -1,4 +1,4 @@
-package men.mpaxlamitsounas.mplearn;
+package men.mpaxlamitsounas.mmlearn;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;

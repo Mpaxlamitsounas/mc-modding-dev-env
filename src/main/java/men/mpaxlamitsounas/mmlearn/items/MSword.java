@@ -1,4 +1,4 @@
-package men.mpaxlamitsounas.mplearn.items;
+package men.mpaxlamitsounas.mmlearn.items;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.EntityLivingBase;
@@ -12,9 +12,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import men.mpaxlamitsounas.mplearn.ModMaterials;
-import men.mpaxlamitsounas.mplearn.Tags;
-import men.mpaxlamitsounas.mplearn.util.EntityLightningBoltCustom;
+import men.mpaxlamitsounas.mmlearn.ModMaterials;
+import men.mpaxlamitsounas.mmlearn.Tags;
+import men.mpaxlamitsounas.mmlearn.util.EntityLightningBoltCustom;
 
 @Mod.EventBusSubscriber(Side.SERVER)
 public class MSword extends ItemSword {

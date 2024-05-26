@@ -1,4 +1,4 @@
-package men.mpaxlamitsounas.mplearn.blocks;
+package men.mpaxlamitsounas.mmlearn.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -9,7 +9,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import men.mpaxlamitsounas.mplearn.Tags;
+import men.mpaxlamitsounas.mmlearn.Tags;
 
 public class CastleRoofTile extends Block {
 

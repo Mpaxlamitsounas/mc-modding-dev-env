@@ -1,4 +1,4 @@
-package men.mpaxlamitsounas.mplearn.util;
+package men.mpaxlamitsounas.mmlearn.util;
 
 import java.util.List;
 

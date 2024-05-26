@@ -1,4 +1,4 @@
-package men.mpaxlamitsounas.mplearn.proxy;
+package men.mpaxlamitsounas.mmlearn.proxy;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -9,9 +9,9 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import men.mpaxlamitsounas.mplearn.ModBlocks;
-import men.mpaxlamitsounas.mplearn.blocks.CastleRoofTile;
-import men.mpaxlamitsounas.mplearn.items.MSword;
+import men.mpaxlamitsounas.mmlearn.ModBlocks;
+import men.mpaxlamitsounas.mmlearn.blocks.CastleRoofTile;
+import men.mpaxlamitsounas.mmlearn.items.MSword;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {

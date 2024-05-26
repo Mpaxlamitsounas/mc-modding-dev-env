@@ -1,4 +1,4 @@
-package men.mpaxlamitsounas.mplearn.proxy;
+package men.mpaxlamitsounas.mmlearn.proxy;
 
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -6,8 +6,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
-import men.mpaxlamitsounas.mplearn.ModBlocks;
-import men.mpaxlamitsounas.mplearn.ModItems;
+import men.mpaxlamitsounas.mmlearn.ModBlocks;
+import men.mpaxlamitsounas.mmlearn.ModItems;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
