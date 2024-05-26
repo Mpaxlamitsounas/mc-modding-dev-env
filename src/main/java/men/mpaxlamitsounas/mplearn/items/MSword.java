@@ -14,11 +14,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import men.mpaxlamitsounas.mplearn.ModMaterials;
 import men.mpaxlamitsounas.mplearn.Tags;
+import men.mpaxlamitsounas.mplearn.util.EntityLightningBoltCustom;
 
 @Mod.EventBusSubscriber(Side.SERVER)
 public class MSword extends ItemSword {
 
-    public static HashMap<EntityLivingBase, Long> immuneToLightningDuration = new HashMap<EntityLivingBase, Long>();
 
     public MSword() {
         super(ModMaterials.OBSIDIAN);
@@ -27,8 +27,8 @@ public class MSword extends ItemSword {
 
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
-        target.world.addWeatherEffect(new EntityLightningBolt(target.world, target.posX, target.posY, target.posZ,
-                true));
+        target.world.addWeatherEffect(new EntityLightningBoltCustom(target.world, target.posX, target.posY + 1.0F, target.posZ,
+                false));
         stack.damageItem(1, attacker);
         return true;
     }
