@@ -1,8 +1,6 @@
 package men.mpaxlamitsounas.mplearn.items;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentFireAspect;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Enchantments;
@@ -28,8 +26,7 @@ public class MSword extends ItemSword {
 
     @Override
     // I sure hope this works in general
-    public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn)
-    {
+    public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
         stack.addEnchantment(Enchantments.FIRE_ASPECT, 1);
     }
 
