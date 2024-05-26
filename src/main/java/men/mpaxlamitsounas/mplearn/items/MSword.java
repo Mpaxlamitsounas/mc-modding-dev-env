@@ -1,10 +1,7 @@
 package men.mpaxlamitsounas.mplearn.items;
 
-import java.util.HashMap;
-
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.client.model.ModelLoader;
@@ -19,7 +16,6 @@ import men.mpaxlamitsounas.mplearn.util.EntityLightningBoltCustom;
 @Mod.EventBusSubscriber(Side.SERVER)
 public class MSword extends ItemSword {
 
-
     public MSword() {
         super(ModMaterials.OBSIDIAN);
         this.setTranslationKey(Tags.MODID + ".msword").setRegistryName("msword");
@@ -27,8 +23,9 @@ public class MSword extends ItemSword {
 
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
-        target.world.addWeatherEffect(new EntityLightningBoltCustom(target.world, target.posX, target.posY + 1.0F, target.posZ,
-                false));
+        target.world.addWeatherEffect(
+                new EntityLightningBoltCustom(target.world, target.posX, target.posY + 1.0F, target.posZ,
+                        false));
         stack.damageItem(1, attacker);
         return true;
     }
