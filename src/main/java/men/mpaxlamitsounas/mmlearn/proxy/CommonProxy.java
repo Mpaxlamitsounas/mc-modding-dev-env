@@ -11,21 +11,27 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import men.mpaxlamitsounas.mmlearn.ModBlocks;
 import men.mpaxlamitsounas.mmlearn.blocks.CastleRoofTile;
+import men.mpaxlamitsounas.mmlearn.blocks.Shit;
 import men.mpaxlamitsounas.mmlearn.items.MSword;
+import men.mpaxlamitsounas.mmlearn.items.Turd;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().register(new CastleRoofTile());
+        event.getRegistry().registerAll(
+                new CastleRoofTile(),
+                new Shit());
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
                 new ItemBlock(ModBlocks.castleRoofTile).setRegistryName(ModBlocks.castleRoofTile.getRegistryName()),
-                new MSword());
+                new MSword(),
+                new Turd(),
+                new ItemBlock(ModBlocks.shit).setRegistryName(ModBlocks.shit.getRegistryName()));
     }
 
     public void preInit(FMLPreInitializationEvent e) {}
