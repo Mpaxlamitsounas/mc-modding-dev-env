@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -16,12 +15,12 @@ import men.mpaxlamitsounas.mmlearn.ModMaterials;
 import men.mpaxlamitsounas.mmlearn.Tags;
 import men.mpaxlamitsounas.mmlearn.util.EntityLightningBoltCustom;
 
-@Mod.EventBusSubscriber(Side.SERVER)
 public class MSword extends ItemSword {
 
     public MSword() {
         super(ModMaterials.OBSIDIAN);
-        this.setTranslationKey(Tags.MODID + ".msword").setRegistryName("msword");
+        this.setTranslationKey(Tags.MODID + ".msword")
+                .setRegistryName("msword");
     }
 
     @Override

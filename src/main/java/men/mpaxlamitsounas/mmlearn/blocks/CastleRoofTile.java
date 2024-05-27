@@ -15,8 +15,11 @@ public class CastleRoofTile extends Block {
 
     public CastleRoofTile() {
         super(Material.ROCK);
-        this.setTranslationKey(Tags.MODID + ".castle_roof_tile").setRegistryName("castle_roof_tile").setHardness(1.5F)
-                .setResistance(10.0F).setCreativeTab(CreativeTabs.DECORATIONS);
+        this.setTranslationKey(Tags.MODID + ".castle_roof_tile")
+                .setRegistryName("castle_roof_tile")
+                .setHardness(1.5F)
+                .setResistance(10.0F)
+                .setCreativeTab(CreativeTabs.DECORATIONS);
     }
 
     @SideOnly(Side.CLIENT)
