@@ -5,18 +5,18 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import men.mpaxlamitsounas.mmlearn.items.MSword;
-import men.mpaxlamitsounas.mmlearn.items.Turd;
+import men.mpaxlamitsounas.mmlearn.items.Mudball;
 
 public class ModItems {
 
     @GameRegistry.ObjectHolder("mmlearn:msword")
     public static MSword mSword;
-    @GameRegistry.ObjectHolder("mmlearn:turd")
-    public static Turd turd;
+    @GameRegistry.ObjectHolder("mmlearn:mudball")
+    public static Mudball mudball;
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         mSword.initModel();
-        turd.initModel();
+        mudball.initModel();
     }
 }

@@ -5,18 +5,18 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import men.mpaxlamitsounas.mmlearn.blocks.CastleRoofTile;
-import men.mpaxlamitsounas.mmlearn.blocks.Shit;
+import men.mpaxlamitsounas.mmlearn.blocks.Mud;
 
 public class ModBlocks {
 
     @GameRegistry.ObjectHolder("mmlearn:castle_roof_tile")
     public static CastleRoofTile castleRoofTile;
-    @GameRegistry.ObjectHolder("mmlearn:shit")
-    public static Shit shit;
+    @GameRegistry.ObjectHolder("mmlearn:mud")
+    public static Mud mud;
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         castleRoofTile.initModel();
-        shit.initModel();
+        mud.initModel();
     }
 }

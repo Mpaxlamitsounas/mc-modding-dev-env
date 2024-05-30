@@ -21,16 +21,16 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import men.mpaxlamitsounas.mmlearn.Tags;
 
-public class Turd extends ItemFood {
+public class Mudball extends ItemFood {
 
     public final int itemUseDuration = 1;
 
-    public Turd() {
+    public Mudball() {
         super(1, 10.0F, false);
         this.setAlwaysEdible()
                 .setCreativeTab(CreativeTabs.FOOD)
-                .setTranslationKey(Tags.MODID + ".turd")
-                .setRegistryName("turd");
+                .setTranslationKey(Tags.MODID + ".mudball")
+                .setRegistryName("mudball");
     }
 
     @Override

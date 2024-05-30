@@ -19,14 +19,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import men.mpaxlamitsounas.mmlearn.ModItems;
 import men.mpaxlamitsounas.mmlearn.Tags;
 
-public class Shit extends Block {
+public class Mud extends Block {
 
-    public Shit() {
+    public Mud() {
         super(Material.GROUND);
         this.setSoundType(SoundType.SLIME)
                 .setCreativeTab(CreativeTabs.DECORATIONS)
-                .setTranslationKey(Tags.MODID + ".shit")
-                .setRegistryName("shit")
+                .setTranslationKey(Tags.MODID + ".mud")
+                .setRegistryName("mud")
                 .setCreativeTab(CreativeTabs.DECORATIONS)
                 .setHardness(0.5F)
                 .setHarvestLevel("shovel", 0);
@@ -42,7 +42,7 @@ public class Shit extends Block {
     }
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return ModItems.turd;
+        return ModItems.mudball;
     }
 
     public int quantityDropped(Random random) {

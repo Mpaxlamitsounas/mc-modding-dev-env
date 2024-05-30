@@ -1,6 +1,6 @@
 package men.mpaxlamitsounas.mmlearn.proxy;
 
-import men.mpaxlamitsounas.mmlearn.fluids.Piss;
+import men.mpaxlamitsounas.mmlearn.fluids.Lemonade;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -14,10 +14,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import men.mpaxlamitsounas.mmlearn.ModBlocks;
 import men.mpaxlamitsounas.mmlearn.blocks.CastleRoofTile;
-import men.mpaxlamitsounas.mmlearn.blocks.Shit;
+import men.mpaxlamitsounas.mmlearn.blocks.Mud;
 import men.mpaxlamitsounas.mmlearn.items.MSword;
-import men.mpaxlamitsounas.mmlearn.items.Turd;
-import men.mpaxlamitsounas.mmlearn.fluids.Piss;
+import men.mpaxlamitsounas.mmlearn.items.Mudball;
+import men.mpaxlamitsounas.mmlearn.fluids.Lemonade;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
@@ -26,7 +26,7 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
                 new CastleRoofTile(),
-                new Shit());
+                new Mud());
     }
 
     @SubscribeEvent
@@ -34,13 +34,13 @@ public class CommonProxy {
         event.getRegistry().registerAll(
                 new ItemBlock(ModBlocks.castleRoofTile).setRegistryName(ModBlocks.castleRoofTile.getRegistryName()),
                 new MSword(),
-                new Turd(),
-                new ItemBlock(ModBlocks.shit).setRegistryName(ModBlocks.shit.getRegistryName()));
+                new Mudball(),
+                new ItemBlock(ModBlocks.mud).setRegistryName(ModBlocks.mud.getRegistryName()));
     }
 
     @SubscribeEvent
     public static void registerFluids(RegistryEvent.Register<Item> event) {
-        FluidRegistry.registerFluid(new Piss());
+        FluidRegistry.registerFluid(new Lemonade());
     }
 
     public void preInit(FMLPreInitializationEvent e) {}
