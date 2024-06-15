@@ -1,0 +1,117 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "mmlearn:mud"
+  },
+  "variants": {
+    "normal": [
+      {
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "y": 90,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "y": 180,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "y": 270,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 90,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 90,
+        "y": 90,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 90,
+        "y": 180,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 90,
+        "y": 270,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 180,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 180,
+        "y": 90,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 180,
+        "y": 180,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 180,
+        "y": 270,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 270,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 270,
+        "y": 90,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 270,
+        "y": 180,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      },
+      {
+        "x": 270,
+        "y": 270,
+        "textures": {
+          "all": "mmlearn:blocks/mud"
+        }
+      }
+    ],
+    "inventory": [
+      {}
+    ]
+  }
+}
