@@ -1,8 +1,6 @@
 package men.mpaxlamitsounas.mmlearn.fluids;
 
-import java.awt.*;
-
-public class Lemonade extends ModFluid {
+public class Lemonade extends CustomFluid {
 
     public Lemonade() {
         super("lemonade");

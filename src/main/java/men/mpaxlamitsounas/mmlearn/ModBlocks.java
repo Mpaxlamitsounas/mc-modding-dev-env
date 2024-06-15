@@ -1,7 +1,9 @@
 package men.mpaxlamitsounas.mmlearn;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -11,16 +13,17 @@ import men.mpaxlamitsounas.mmlearn.fluids.blocks.ModFluidBlock;
 
 public class ModBlocks {
 
-    @GameRegistry.ObjectHolder("mmlearn:castle_roof_tile")
-    public static CastleRoofTile castleRoofTile;
-    @GameRegistry.ObjectHolder("mmlearn:mud")
-    public static Mud mud;
-
-    public static final ModFluidBlock LEMONADE_BLOCK = new ModFluidBlock(ModFluids.lemonade, Material.WATER);
+    public static CastleRoofTile castleRoofTile = new CastleRoofTile();
+    public static Mud mud = new Mud();
+    public static final ModFluidBlock lemonadeBlock = new ModFluidBlock(ModFluids.lemonade, Material.WATER);
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         castleRoofTile.initModel();
         mud.initModel();
+    }
+
+    public static Item asItemBlock(Block block) {
+        return new ItemBlock(block).setRegistryName(block.getRegistryName());
     }
 }

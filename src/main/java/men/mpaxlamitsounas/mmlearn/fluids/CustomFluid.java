@@ -1,17 +1,17 @@
 package men.mpaxlamitsounas.mmlearn.fluids;
 
-import java.awt.*;
-
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 
 import men.mpaxlamitsounas.mmlearn.Tags;
+import men.mpaxlamitsounas.mmlearn.proxy.CommonProxy;
 
-public class ModFluid extends Fluid {
+public class CustomFluid extends Fluid {
 
     // TODO: the texture doesn't work, but I haven't to get it to work over the course of 3 days, so FUCK this for now
-    public ModFluid(String name) {
+    public CustomFluid(String name) {
         super(name, new ResourceLocation(Tags.MODID, "fluids/" + name + "_still"),
                 new ResourceLocation(Tags.MODID, "fluids/" + name + "_flowing"));
+        CommonProxy.registerFluid(this);
     }
 }

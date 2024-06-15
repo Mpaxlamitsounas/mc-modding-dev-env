@@ -13,13 +13,8 @@ import net.minecraft.world.World;
 
 public class EntityLightningBoltCustom extends EntityLightningBolt {
 
-    /** Declares which state the lightning bolt is in. Whether it's in the air, hit the ground, etc. */
     private int lightningState;
-    /** A random long that is used to change the vertex of the lightning rendered in RenderLightningBolt */
     public long boltVertex;
-    /**
-     * Determines the time before the EntityLightningBolt is destroyed. It is a random integer decremented over time.
-     */
     private int boltLivingTime;
     private final boolean effectOnly;
 
@@ -32,16 +27,13 @@ public class EntityLightningBoltCustom extends EntityLightningBolt {
         this.effectOnly = effectOnlyIn;
     }
 
-    /**
-     * Called to update the entity's position/logic.
-     */
     @Override
     public void onUpdate() {
         if (this.lightningState == 2) {
-            this.world.playSound((EntityPlayer) null, this.posX, this.posY, this.posZ,
+            this.world.playSound(null, this.posX, this.posY, this.posZ,
                     SoundEvents.ENTITY_LIGHTNING_THUNDER, SoundCategory.WEATHER, 0.15F,
                     0.8F + this.rand.nextFloat() * 0.2F);
-            this.world.playSound((EntityPlayer) null, this.posX, this.posY, this.posZ,
+            this.world.playSound(null, this.posX, this.posY, this.posZ,
                     SoundEvents.ENTITY_LIGHTNING_IMPACT, SoundCategory.WEATHER, 0.35F,
                     0.5F + this.rand.nextFloat() * 0.2F);
         }
