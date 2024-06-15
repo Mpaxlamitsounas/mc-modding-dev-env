@@ -26,4 +26,9 @@ public class ModBlocks {
     public static Item asItemBlock(Block block) {
         return new ItemBlock(block).setRegistryName(block.getRegistryName());
     }
+
+    @SideOnly(Side.CLIENT)
+    public static void renderFluidBlocks() {
+        lemonadeBlock.render();
+    }
 }

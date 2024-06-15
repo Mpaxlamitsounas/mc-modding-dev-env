@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import men.mpaxlamitsounas.mmlearn.ModBlocks;
@@ -35,4 +36,7 @@ public class CommonProxy {
                 ModItems.mudball,
                 ModBlocks.asItemBlock(ModBlocks.mud));
     }
+
+    @SubscribeEvent
+    public void preInit(FMLPreInitializationEvent e) {}
 }
