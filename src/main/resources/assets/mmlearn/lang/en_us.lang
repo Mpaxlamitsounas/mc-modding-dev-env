@@ -2,4 +2,4 @@ tile.mmlearn.castle_roof_tile.name=Castle Roof Tile
 item.mmlearn.msword.name=M's Sword
 item.mmlearn.mudball.name=Mudball
 tile.mmlearn.mud.name=Mud
-tile.mmlearn.lemonade.name=Lemonade
+fluid.lemonade=Lemonade

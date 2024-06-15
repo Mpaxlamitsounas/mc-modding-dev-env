@@ -1,5 +1,6 @@
 package men.mpaxlamitsounas.mmlearn;
 
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -11,8 +12,13 @@ public class MmLearn {
 
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
 
+    static {
+        FluidRegistry.enableUniversalBucket();
+    }
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
         LOGGER.info("Hello from " + Tags.MODNAME + "!");
+        ModFluids.registerFluids();
     }
 }
