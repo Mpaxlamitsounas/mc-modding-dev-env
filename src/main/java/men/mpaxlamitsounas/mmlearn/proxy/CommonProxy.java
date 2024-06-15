@@ -24,8 +24,7 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
                 ModBlocks.castleRoofTile,
-                ModBlocks.mud,
-                ModBlocks.lemonadeBlock);
+                ModBlocks.mud);
     }
 
     @SubscribeEvent

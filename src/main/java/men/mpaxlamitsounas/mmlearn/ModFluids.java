@@ -5,5 +5,9 @@ import men.mpaxlamitsounas.mmlearn.fluids.Lemonade;
 
 public class ModFluids {
 
-    public static final CustomFluid lemonade = new Lemonade();
+    public static CustomFluid lemonade;
+
+    public static void registerFluids() {
+        lemonade = new Lemonade();
+    }
 }

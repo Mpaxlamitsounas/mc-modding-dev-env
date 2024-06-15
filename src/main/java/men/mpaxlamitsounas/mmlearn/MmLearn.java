@@ -19,5 +19,6 @@ public class MmLearn {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
         LOGGER.info("Hello from " + Tags.MODNAME + "!");
+        ModFluids.registerFluids();
     }
 }
