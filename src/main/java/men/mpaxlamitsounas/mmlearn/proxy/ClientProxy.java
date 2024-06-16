@@ -1,6 +1,5 @@
 package men.mpaxlamitsounas.mmlearn.proxy;
 
-import men.mpaxlamitsounas.mmlearn.MmLearn;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -22,5 +21,7 @@ public class ClientProxy extends CommonProxy {
     }
 
     @Override
-    public void preInit(FMLPreInitializationEvent e) {super.preInit(e);}
+    public void preInit(FMLPreInitializationEvent e) {
+        super.preInit(e);
+    }
 }
