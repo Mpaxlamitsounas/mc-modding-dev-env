@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import men.mpaxlamitsounas.mmlearn.ModBlocks;
+import men.mpaxlamitsounas.mmlearn.ModFluids;
 import men.mpaxlamitsounas.mmlearn.ModItems;
 import men.mpaxlamitsounas.mmlearn.fluids.CustomFluid;
 
@@ -24,7 +25,8 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
                 ModBlocks.castleRoofTile,
-                ModBlocks.mud);
+                ModBlocks.mud,
+                ModBlocks.lemonadeBlock);
     }
 
     @SubscribeEvent
@@ -36,6 +38,8 @@ public class CommonProxy {
                 ModBlocks.asItemBlock(ModBlocks.mud));
     }
 
-    @SubscribeEvent
-    public void preInit(FMLPreInitializationEvent e) {}
+    public void preInit(FMLPreInitializationEvent e) {
+        ModFluids.registerFluids();
+        ModFluids.addBuckets();
+    }
 }

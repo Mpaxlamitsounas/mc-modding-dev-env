@@ -1,9 +1,9 @@
 package men.mpaxlamitsounas.mmlearn.proxy;
 
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod.EventBusSubscriber(Side.SERVER)
+@SideOnly(Side.SERVER)
 public class ServerProxy extends CommonProxy {
 
 }
